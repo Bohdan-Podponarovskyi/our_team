@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 .main__head {
   display: flex;
@@ -56,6 +57,64 @@ body {
   flex: 1;
   height: 100%;
   border-bottom: 1px solid #FFCC00;
+}
+.main__person-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.main__photo-wrapper, .main__person-info {
+  flex: 1;
+  max-width: 430px;
+  margin: 65px 0;
+}
+.main__photo-wrapper {
+  padding: 15px;
+  position: relative;
+}
+.main__person-photo {
+  border: 1px solid #FFCC00;
+}
+.main__card-divider {
+  border-left: 1px solid #FFCC00;
+}
+.main__person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-decor {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 100px;
+  position: absolute;
+}
+.box-decor--right-top {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+}
+.box-decor--right-bottom {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+}
+.box-decor--left-top {
+  top: 0;
+  right: 0;
+  border-top: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+}
+.box-decor--left-bottom {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
 }
 
 /*# sourceMappingURL=styles.css.map */

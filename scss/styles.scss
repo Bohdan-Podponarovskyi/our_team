@@ -26,6 +26,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+
+// Head //
 
   &__head {
     display: flex;
@@ -68,5 +71,75 @@ body {
           border-bottom: 1px solid $main-color_gold;
       }
     }
+  }
+
+  // Person card //
+
+  &__person-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__photo-wrapper, &__person-info {
+    flex: 1;
+    max-width: 430px;
+    margin: 65px 0;
+  }
+
+  &__photo-wrapper {
+    padding: 15px;
+    position: relative;
+  }
+
+  &__person-photo {
+    border: 1px solid $main-color_gold;
+  }
+
+  &__card-divider {
+    border-left: 1px solid $main-color_gold;
+  }
+
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.box-decor {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 100px;
+  position: absolute;
+
+  &--right-top {
+    top: 0;
+    left: 0;
+    border-top: 1px solid $main-color_gold;
+    border-left: 1px solid $main-color_gold;
+  }
+
+  &--right-bottom {
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid $main-color_gold;
+    border-left: 1px solid $main-color_gold;
+  }
+
+  &--left-top {
+    top: 0;
+    right: 0;
+    border-top: 1px solid $main-color_gold;
+    border-right: 1px solid $main-color_gold;
+  }
+
+  &--left-bottom {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid $main-color_gold;
+    border-right: 1px solid $main-color_gold;
   }
 }
