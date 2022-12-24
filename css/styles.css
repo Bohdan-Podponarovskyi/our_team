@@ -145,6 +145,28 @@ body {
   background: transparent;
 }
 
+.socials {
+  display: flex;
+  gap: 5px;
+  margin: 3rem 0 auto;
+}
+.socials__icon-wrapper {
+  min-width: 3rem;
+  min-height: 3rem;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  position: relative;
+}
+.socials__icon {
+  display: block;
+  color: #CCCCCC;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+}
+
 .box-decor {
   width: 100%;
   max-width: 100px;
