@@ -10,7 +10,7 @@ body {
   font-style: normal;
 }
 
-main {
+.main {
   width: 100%;
   max-width: 1170px;
   margin: 120px auto;
@@ -19,11 +19,43 @@ main {
   justify-content: center;
   align-items: center;
 }
-main__head {
+.main__head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+.main__head-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.main__head-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 6.6rem;
+  text-transform: uppercase;
+  color: #FFCC00;
+  margin: 1.5rem 0 4rem;
+}
+.main__head-divider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main__head-divider:before, .main__head-divider:after {
+  content: "";
+  flex: 1;
+  height: 100%;
+  border-bottom: 1px solid #FFCC00;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,10 @@ $primary-font: 'Raleway', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 $additional-font: 'Open Sans', sans-serif;
 
+$main-color_gold: #FFCC00;
+$primary-color_gray: #666666;
+$secondary-color_gray: #333333;
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +18,7 @@ body {
   font-style: normal;
 }
 
-main {
+.main {
   width: 100%;
   max-width: 1170px;
   margin: 120px auto;
@@ -28,9 +32,41 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 450px;
 
     &-subtitle {
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      text-transform: uppercase;
+      color: #898F8F;
+    }
 
+    &-title {
+      font-family: $secondary-font;
+      font-weight: 900;
+      font-size: 6.0rem;
+      line-height: 6.6rem;
+      text-transform: uppercase;
+      color: $main-color_gold;
+      margin: 1.5rem 0 4rem;
+      }
+
+      &-divider {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:before, &:after {
+          content: "";
+          flex: 1;
+          height: 100%;
+          border-bottom: 1px solid $main-color_gold;
+      }
     }
   }
 }
