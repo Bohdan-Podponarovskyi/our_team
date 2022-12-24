@@ -116,6 +116,35 @@ body {
   margin: 30px auto;
 }
 
+.triple-divider {
+  margin: 2rem 0 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.triple-divider--right, .triple-divider--center, .triple-divider--left {
+  border: 2px solid #FFCC00;
+}
+.triple-divider--center {
+  min-width: 2rem;
+}
+.triple-divider--right, .triple-divider--left {
+  min-width: 10px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  color: #666666;
+  border: 1px solid #FFCC00;
+  background: transparent;
+}
+
 .box-decor {
   width: 100%;
   max-width: 100px;

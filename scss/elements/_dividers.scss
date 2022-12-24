@@ -27,3 +27,23 @@
     margin: 30px auto;
   }
 }
+
+.triple-divider {
+  margin: 2rem 0 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  &--right, &--center, &--left {
+    border: 2px solid $main-color_gold;
+  }
+
+  &--center {
+    min-width: 2rem;
+  }
+
+  &--right, &--left {
+    min-width: 10px;
+  }
+}
