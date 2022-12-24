@@ -1,0 +1,19 @@
+@import "./_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-style: normal;
+}
+
+@import "../layout/_main.scss";
+@import "../elements/_dividers.scss";
+@import "../elements/_buttons.scss";
+@import "../elements/_socials.scss";
+@import "../elements/_box-decor.scss";

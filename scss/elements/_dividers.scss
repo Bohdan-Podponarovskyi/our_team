@@ -1,0 +1,29 @@
+.main {
+  &__head-divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &:before, &:after {
+      content: "";
+      flex: 1;
+      height: 100%;
+      border-bottom: $border;
+    }
+  }
+
+  &__card-divider {
+    border-left: $border;
+  }
+
+  &__person-name:after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    border-bottom: $border;
+    margin: 30px auto;
+  }
+}
